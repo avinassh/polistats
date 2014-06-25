@@ -2,6 +2,8 @@
 
 ## Check the [demo](http://avinassh.github.io/polistats)
 
+![image](http://i.imgur.com/e5Y6VaZ.png)
+
 ## Instructions:
 
 - Install required libraries from `requirement.txt`:
