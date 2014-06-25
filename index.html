@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Google Search Trends of Indian Politics</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	</head>
+	<body>
+
+		<a href="https://github.com/avinassh/polistats" target='_BLANK'><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+
+		<div id="intro">
+		<center>
+			<p id="title"><strong>Google Search Trends of Indian Politics</strong></p>
+			<div id="desc">
+			<p>What it is and How it works:</p>
+			<p>These two following graphs show the number of search results appeared on Google for certain keywords. If you search for '<i>Narendra Modi</i> ' today you will see approximately 15 million search results. The graphs here show exactly that from May 4, 2014. I just wanted to compare the number search results for <i>Narendra Modi</i>, <i>Arvind Kejriwal</i> and <i>Rahul Gandhi</i>. These graphs also include search results for <i>Sonia Gandhi</i>, <i>BJP</i>, <i>AAP</i> and <i>Congress India</i>. One graph shows number of search results on main <a href="https://google.co.in" target='_BLANK'>Google</a> search site and other on <a href="https://news.google.co.in" target='_BLANK'>Google News</a>.</p>
+			<p>I wrote a bot which visits Google four times a day at 10am, 2pm, 6pm and 10pm. It searches for the keywords on both sites and stores the results in database. The bot is active since May 4, 2014. Bot is written in Python and MongoDB is used to store the data. An <a href="http://176.56.238.64:8888/polistats" target='_BLANK'>API end point</a> is available to get all the data in JSON and it is powered by <a href="http://tornadoweb.org" target='_BLANK'>Tornado</a>.
+			</p>
+			</div>
+		</center>
+		</div>
+		
+		<div id="container-gm"></div>
+		<div id="container-gn"></div>
+
+		<div id="footer"><p>Built with <img src="https://github.global.ssl.fastly.net/images/icons/emoji/heart.png"> by avi using Python, Tornado and MongoDB.</p></div>
+
+		<script src="http://code.highcharts.com/stock/highstock.js"></script>
+		<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+		<script type="text/javascript" src="chart.js"></script>
+
+		<script type="text/javascript">
+		   $(function() {
+		      chart();
+		    });
+		</script>
+
+	</body>
+</html>
