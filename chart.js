@@ -56,6 +56,10 @@ function createChart(div_id, chart_data, text) {
 	    	valueDecimals: 2
 	    },
 
+	    legend: {
+	    	enabled: true
+	    },
+
 	    title: {
 				text: text
 		},
