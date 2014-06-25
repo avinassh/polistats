@@ -1,0 +1,43 @@
+#intro {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+#title {
+	margin-top: 3%;
+	margin-bottom: 2.5%;
+	font-size: 1.7em;
+}
+
+#desc {
+	font-size: 1.2em;
+	margin-top: auto;
+	margin-bottom: 1.5%;
+	margin-left: 3%;
+	margin-right: 3%;
+	line-height: 155%;
+}
+
+#desc :first-child{
+	margin-bottom: 1.1%;
+}
+
+#container-gm,
+#container-gn{
+	height: 400px; 
+	min-width: 310px;
+}
+
+#container-gm{
+	margin-bottom: 5%;
+}
+
+#footer{
+	text-align: center;
+	font-size: 1em;
+}
+
+#footer img{
+	width: 0.7%
+}
